@@ -109,7 +109,7 @@ static NSInteger nextMonthValue(const char *bytes, NSUInteger numberOfBytes, NSU
 		return NSNotFound;
 
 	if (monthCharacters[0] == 'J' || monthCharacters[0] == 'j') { //Jan, Jun, Jul
-		if (monthCharacters[1] == 'a' || monthCharacters[i] == 'A')
+		if (monthCharacters[1] == 'a' || monthCharacters[1] == 'A')
 			return QSJanuary;
 		if (monthCharacters[1] == 'u' || monthCharacters[1] == 'U') {
 			if (monthCharacters[2] == 'n' || monthCharacters[2] == 'N')
