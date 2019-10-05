@@ -206,7 +206,7 @@ static const CGFloat marginBottom = 4.0;
 
 	pt.x = marginLeft + ((ix + 1) * self.maxCircleWidth);
 	pt.x += (ix * self.spaceBetweenCircles);
-	pt.x -= (self.maxCircleWidth / 2.0);
+	pt.x -= (self.maxCircleWidth / 2.0f);
 
 	return pt;
 }

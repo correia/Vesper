@@ -130,7 +130,7 @@ void VSDefaultsSetTextWeight(VSTextWeight textWeight) {
 	
 	if (textWeight < VSTextWeightRegular || textWeight > VSTextWeightLight)
 		textWeight = VSTextWeightRegular;
-	[[NSUserDefaults standardUserDefaults] setInteger:textWeight forKey:VSDefaultsTextWeightKey];
+	[[NSUserDefaults standardUserDefaults] setInteger:(NSInteger)textWeight forKey:VSDefaultsTextWeightKey];
 	//	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 

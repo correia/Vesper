@@ -173,7 +173,7 @@ static NSString *VSDetailStatusViewStateKey = @"detailStatusState";
 
 - (VSDetailStatusViewState)nextStateWithState:(VSDetailStatusViewState)initialState {
 	
-	NSInteger state = initialState;
+	NSInteger state = (NSInteger)initialState;
 	state = state + 1;
 	if (state > (NSInteger)VSDetailStatusViewStateMaximum) {
 		state = (NSInteger)VSDetailStatusViewStateMinimum; /*Wrap around*/
